@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Tiket Bus & Travel</title>
+</head>
+<body>
+         <!--Judul-->
+            <h1 style="text-align: center;">Booking Tiket Bus & Travel</h1>
+            
+    <form action="#">
+        <fieldset style="width: 30%; margin: auto;">
+            <legend>Data Penumpang</legend>
+        <table border="0" cellspacing="0" cellpadding="10">
+         <!--Data Penumpang-->
+           
+        <tr>
+            <td>Nama:</td><td><input type="text" name="Username" required placeholder="Nama Anda" /><br /></td>
+            </tr>
+        <tr>
+        <td><label for="Email">Email:</label></td>
+        <td><input type="text" id="Email" name="Email" required placeholder="Email Anda" /><br /></td>
+            </tr>
+        <tr>
+        <td><label for="HP">No HP:</label></td>
+        <td><input type="number" id="HP" name="HP" required placeholder="08xxxxxxxx"/><br /></td>
+            </tr>
+        </table>
+        </fieldset>
+        <!--Data Perjalanan-->
+        <fieldset style="width: 30%; margin: auto;">
+            <legend>Mau Kemana?</legend>
+            <table border="0" cellspacing="0" cellpadding="10">
+        <tr>
+        <td>Destinasi:</td>
+        <td><select name="Kota Asal" id="Kota Asal">
+            <option value="Jakarta">Padang</option>
+            <option value="Bandung">Aek Loba</option>
+            <option value="Yogyakarta">Pematang Siantar</option>
+            <option value="Surabaya">Prapat</option>
+            <option value="Semarang">Pekanbaru</option>
+            <option value="Malang">Banda Aceh</option>
+        </select>
+        </td>
+            </tr>
+        <tr>
+        <td><label for="Tanggal">Tanggal Keberangkatan:</label></td>
+        <td><input type="date" id="Tanggal" name="Tanggal" placeholder="Tanggal Keberangkatan" /><br /></td>
+            </tr>
+        <tr>
+        <td><label for="Waktu">Waktu Berangkat:</label></td>
+        <td><input type="time" id="Waktu" name="Waktu" placeholder="Waktu Berangkat" /><br /></td>
+            </tr>
+            <tr>
+        <td>Jumlah Penumpang:</td>
+        <td><input type="number" name="Jumlah Penumpang" placeholder="Jumlah Penumpang" /><br /></td>
+            </tr>
+        </table>
+        </fieldset>
+        <fieldset style="width: 30%; margin: auto;">
+            <legend>Layanan Yang Tersedia</legend>
+            <table border="0" cellspacing="0" cellpadding="10">
+            <!--Layanan-->
+        <tr>
+        <td>Armada:</td>
+        <td><input type="radio" name="Jenis Layanan" value="Mobil Hiace" />Mobil Hiace
+        <br><input type="radio" name="Jenis Layanan" value="Bus Laksana" />Bus Laksana
+        <br><input type="radio" name="Jenis Layanan" value="ELF" />ELF<br /></td>
+        </tr>
+        <tr>
+        <td>Layanan Tambahan:</td>
+        <td><input type="checkbox" name="Layanan Tambahan" value="Makanan" />Makanan
+        <br><input type="checkbox" name="Layanan Tambahan" value="Air Mineral" />Air Mineral
+        <br><input type="checkbox" name="Layanan Tambahan" value="Selimut" />Selimut<br /></td>
+        </tr>
+        <tr>
+            <td><label for="KTP">Upload KTP:</label>
+            <br><br><input type="file" id="KTP" name="KTP" accept=".jpg,.jpeg,.png,.pdf">
+            </td>
+        </tr>
+    </table>
+        </fieldset>
+        <center>
+        <!--Submit-->
+        <tr>
+            <br>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>
